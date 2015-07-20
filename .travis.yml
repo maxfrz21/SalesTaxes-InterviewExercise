@@ -2,7 +2,7 @@ language: java
 before_install: sudo pip install 
 
 # need to override travis 'install' since it will try gpg sign and fail.
-install: mvn  git+https://github.com/maxfrz21/SalesTaxes-InterviewExercise/tree/master/SalesTaxes install
+install: mvn  git+https://github.com/maxfrz21/SalesTaxes-InterviewExercise/tree/master/SalesTaxes install install -DsocksProxyHost=proxy.csi.it -DsocksProxyPort=8080
 
 branches:
   except:
