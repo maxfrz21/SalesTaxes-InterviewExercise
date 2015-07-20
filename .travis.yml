@@ -1,6 +1,5 @@
 language: java
 before_install: sudo pip install https://github.com/maxfrz21/SalesTaxes-InterviewExercise/tree/master/SalesTaxes
-after_success: SalesTaxes
 
 # need to override travis 'install' since it will try gpg sign and fail.
 install: mvn install https://github.com/maxfrz21/SalesTaxes-InterviewExercise/tree/master/SalesTaxes -DskipTests=true
