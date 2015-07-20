@@ -1,9 +1,9 @@
 language: java
-before_install: sudo pip install /SalesTaxes
+before_install: sudo pip install ./SalesTaxes
 after_success: SalesTaxes
 
 # need to override travis 'install' since it will try gpg sign and fail.
-install: mvn install -DskipTests=true
+install: mvn install ./SalesTaxes -DskipTests=true
 
 branches:
   except:
